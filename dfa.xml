@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dfa [
+    <!ELEMENT dfa (states, alphabet, transitions)>
+    <!ELEMENT states (state+)>
+    <!ELEMENT state (#PCDATA)>
+    <!ATTLIST state
+        name CDATA #REQUIRED
+        type (start | accept) #IMPLIED
+    >
+    <!ELEMENT alphabet (symbol+)>
+    <!ELEMENT symbol (#PCDATA)>
+    <!ELEMENT transitions (transition+)>
+    <!ELEMENT transition (from, to, read)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT read (#PCDATA)>
+]>
+<dfa>
+    <states>
+        <state name="s0" type="start"/>
+        <state name="s1"/>
+        <state name="s2" type="accept"/>
+    </states>
+    <alphabet>
+        <symbol>a</symbol>
+        <symbol>b</symbol>
+        <symbol>c</symbol>
+        <symbol>d</symbol>
+    </alphabet>
+    <transitions>
+        <transition>
+            <from>s0</from>
+            <to>s0</to>
+            <read>b</read>
+        </transition>
+        <transition>
+            <from>s0</from>
+            <to>s1</to>
+            <read>a</read>
+        </transition>
+        <transition>
+            <from>s0</from>
+            <to>s1</to>
+            <read>b</read>
+        </transition>
+        <transition>
+            <from>s1</from>
+            <to>s2</to>
+            <read>c</read>
+        </transition>
+        <transition>
+            <from>s1</from>
+            <to>s2</to>
+            <read>d</read>
+        </transition>
+        <transition>
+            <from>s2</from>
+            <to>s2</to>
+            <read>c</read>
+        </transition>
+    </transitions>
+</dfa>
