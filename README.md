@@ -66,9 +66,9 @@ Transitions:
 
 ## 👨‍💻 Authors
 
-- Umut Öztürk – 152120211052  
-- Abdullah Taha Aydın – 152120211055  
-- Atakan Berber – 152120211057  
+- Umut Öztürk  [Github](https://github.com/umtoztrk)
+- Abdullah Taha Aydın  
+- Atakan Berber [Github](https://github.com/aetherr07)   
 
 > Eskisehir Osmangazi University – Computer Engineering Department  
 > Project for Formal Languages and Automata – Spring 2023–2024
